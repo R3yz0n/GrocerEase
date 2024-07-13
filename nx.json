@@ -48,6 +48,39 @@
         "startTargetName": "start",
         "testTargetName": "test"
       }
+    },
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
     }
-  ]
+  ],
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "vite"
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  }
 }
