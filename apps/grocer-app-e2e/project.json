@@ -1,0 +1,10 @@
+{
+  "name": "grocer-app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/grocer-app-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["grocer-app"],
+  "// targets": "to see all targets run: nx show project grocer-app-e2e --web",
+  "targets": {}
+}
